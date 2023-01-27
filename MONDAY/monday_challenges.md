@@ -15,3 +15,30 @@ function NameMe(first, last) {
     this.lastName = last;
     this.name = first + ' ' + last;
 }
+
+
+## Thinkful - List and Loop Drills: Lists of lists
+
+![image](https://user-images.githubusercontent.com/117783981/214979692-1fd47c93-7f0a-4666-ae22-d83ce4e3e653.png)
+
+function processData(data){
+  
+  let product = 1; // Se inicializa la variable a donde se va a almacenar el resultado de la suma 
+      
+  /*
+  Se itera adentro del array anidado con data[i][0] donde el primer [i] se utiliza para iterar sobra el 
+  indice "i" del array primario y el segundo [0] para iterar sobra la primera posicion del array interno
+    
+  */
+  
+    for (let i=0; i<data.length; i++) 
+      {
+        let res = data[i][0] - data[i][1];
+        
+        product = product * res;
+        
+      }
+      
+  return product;
+  
+}
