@@ -42,3 +42,44 @@ function processData(data){
   return product;
   
 }
+
+
+## Stop gninnipS My sdroW!
+
+![image](https://user-images.githubusercontent.com/117783981/214986994-eb7ffe77-4f38-42ec-9a1d-a6c0f27a1db3.png)
+
+
+/*
+Se requiere que si en un string unao mas palabras tiene 5 letras o mas, el string sea deuvelto
+con esas palabras al reves.
+
+Primero: Declaramos la const words y en esta se utiliza el metodo .spli(" ") para almacenar cada palabra por separado
+Segundo: Iteramos sobre el array donde se almaceno cada palabra
+Tercero: En la iteracion tenemos la condicional if donde verifica que si el length de la palabra es mayor a 5 haga lo siguiente:
+  * Cada palabra (words[i]) la separa en sus letras usando .split("")
+  * A las letras les cambia el orden .reverse()
+  * Vuelve a unir las letras usando .join("")
+Cada palabra la guarda en el array "words"
+
+Por ultimo en el return utilizamos nuevamente join(" ") solo que el argumento es un espacio vacio, para que la frase sea retornada con 
+sus espacios en blanco correspondientes y no todas las palabras juntas. El join(" ") tambien concatena las palabras de un array en un string.
+
+*/
+
+
+function spinWords(string) {
+
+  const words = string.split(" ")
+  
+  for (let i = 0; i<words.length; i++) {
+    if (words[i].length >= 5) {
+      words[i] = words[i].split("").reverse().join("");
+      
+    }
+     
+  }
+  
+   return words.join(" ");  
+}
+
+
