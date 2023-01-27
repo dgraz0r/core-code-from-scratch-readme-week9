@@ -60,4 +60,5 @@ function likes(names) {
         names.length - 2
       } others like this`;
   }
+  
 }
